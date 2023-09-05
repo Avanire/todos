@@ -91,10 +91,10 @@ const App: FC = () => {
             <h1 className={styles.title}>{title}</h1>
             <div className={styles.block}>
                 <div className={styles.inputBlock}>
-                    <input type="text" placeholder={placeholder} ref={inputRef} className={styles.input} defaultValue='' />
-                    <img src={sendIcon} alt={sendIconAlt} width={32} className={styles.submitIcon} onClick={handleSendClick} />
+                    <input type="text" placeholder={placeholder} ref={inputRef} className={styles.input} id='input-task' />
+                    <img src={sendIcon} alt={sendIconAlt} width={32} className={styles.submitIcon} onClick={handleSendClick} id='submit-task' />
                 </div>
-                <div className={styles.taskBlock}>
+                <div className={styles.taskBlock} id='taskList'>
                     {
                         tasks.length > 0
                         ? sortedTask.map(item => <TaskItem key={uuidv4()} task={item} handleChangeInput={handleChangeCompleteTask} />)
