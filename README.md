@@ -6,6 +6,10 @@
 Стек:
 - ReactJs
 - TypeScript
+- Cypress
 
 Для запуска приложения выполнить команду:
 - npm run init
+
+Для запуска тестов:
+- npm run cypress
