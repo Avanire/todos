@@ -1,0 +1,25 @@
+.testText {
+    display: flex;
+    font-size: 28px;
+    color: #20252B;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--main-color);
+}
+.input {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+.testText:before {
+    content: '';
+    width: 32px;
+    border: 1px solid var(--main-color);
+    margin-right: 12px;
+}
+.input:checked + .testText {
+    text-decoration: line-through;
+}
+.input:checked + .testText:before {
+    border: 12px solid greenyellow;
+    width: 10px;
+}
